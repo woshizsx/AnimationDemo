@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:transitionOrdering="together"
+    app:startDelay="@android:integer/config_mediumAnimTime"
+    app:duration="@android:integer/config_mediumAnimTime">
+    <fade app:fadingMode="fade_in"/>
+</transitionSet>

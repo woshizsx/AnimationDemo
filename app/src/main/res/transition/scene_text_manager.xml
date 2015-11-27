@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionManager xmlns:app="http://schemas.android.com/apk/res-auto">
+    <transition
+        app:toScene="@layout/scene1_text"
+        app:transition="@transition/scene1_text_transition"/>
+    <transition
+        app:toScene="@layout/scene2_text"
+        app:transition="@transition/scene2_text_transition"/>
+    <transition
+        app:toScene="@layout/scene3_text"
+        app:transition="@transition/scene3_text_transition"/>
+</transitionManager>

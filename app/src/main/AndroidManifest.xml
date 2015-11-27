@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hileone.test" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".scroller.ScrollActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".transmove.TransMoveActivity" >
+        </activity>
+        <activity android:name=".originmove.OriginMoveActivity" >
+        </activity>
+        <activity android:name=".pagerslidingtab.PagerTabActivity" >
+        </activity>
+        <activity android:name=".webview.WebViewActivity" >
+        </activity>
+        <activity android:name=".ipcstudy.IPCActvity" >
+        </activity>
+
+        <service
+            android:name=".ipcstudy.DownloadService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.hileone.test.ipcstudy.DownloadService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".messager.MessagerActivity" >
+        </activity>
+
+        <service
+            android:name=".messager.LocalService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+    </application>
+
+</manifest>

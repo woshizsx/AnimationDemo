@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/root_view_3_to_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <include layout="@layout/scene3" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/root_view_2_to_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <include layout="@layout/scene2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/root_view_1_to_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/scene1" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignTop="@+id/root_view"
+        android:layout_centerVertical="true">
+
+        <include layout="@layout/scene1_text" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/extra_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="112dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/root_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/btn_blue_corner_bg"
+        android:gravity="center"
+        android:text="立即开启"
+        android:textColor="#003cff"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
